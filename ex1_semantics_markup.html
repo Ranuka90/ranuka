@@ -1,0 +1,90 @@
+<!doctype html>
+
+<head>
+<title>Semantics</title>
+
+<style type="text/css" media="screen">
+body {font-family: times;}
+
+#allcontent {
+	margin: 0px auto;
+}
+
+h2 {
+	color: purple;
+	margin: 50px 0px 0px 0px;
+}
+
+
+h3 {
+	color: purple;
+	margin: 50px 0px 0px 0px;
+	font-size: 25px
+}
+
+header {
+	height: 280px;
+	background-color:white;
+	margin: 5px 0px 50px 0px;
+	border-style: none none solid none
+}
+
+header h1 {
+	font-size: 80px; 
+	text-transform: uppercase;
+	font-family: Arial, helvetica, sans-serif; 
+	letter-spacing: -3px;
+	margin-top: -420px;
+	margin-left: 140px;
+}
+
+#bignumber {
+	font-size: 280px;
+	text-transform: uppercase;
+	font-family: "trebuchet MS", Arial, helvetica, sans-serif; 
+	color: purple;
+	position: relative;
+	margin-top: -62px;
+
+
+</style> </head>
+
+<body>
+
+<header>
+<p id="bignumber">5</p>
+<h1>SEMANTICS</h1>
+</header>
+
+<p> <b> HTML DOESN'T PROVIDE A HUGE NUMBER OF ELEMENTS</b> for us to work with. The selection available is more like that of a corner store than a Walmart. We have paragraphs, lists, and headlines but we don't have events, news stories, or recipes. 
+<b>HTML</b> gives us an element for marking up a string as an abbreviation, but it doesn't give us an element for marking up a number as a price.</p>
+
+<p> Clearly, this limitation hasn't been a show-stopper; just look at the amazing variety of websites out there. Even though <b>HTML</b> might not provide a specific element for marking up a particular piece of content, it provides just enough flexibility to be "<i>good enough</i>".</p>
+
+<h2>EXTENSIBILITY</h2>
+
+<p>Other markup languages allow you to invent any element you want. In <b>XML</b>, if you want an event element or a price element, you just go right ahead and create it. The downside to this freedom is that you then have to teach a parser what event or price means.</p> 
+
+<p>The advantage to <b>HTML</b>'s limited set of elements is that every user agent knows about every element. Browsers have a built-in knowledge of <b>HTML</b>. That wouldn't be possible if we were allowed to make up element names.</p>
+
+<p><b>HTML</b> provides a handy escape clause that allows web designers to add more semantic value to elements: the class attribute. This attribute allows us to label specific instances of an element as being a special class or type of that element.
+
+<p>The fact that browsers don't understand the vocabulary we use in our class attributes doesn't affect the rendering of our documents.</p> 
+
+<p>If, at this point, you're thinking"<i>Wait a minute; aren't classes for <b>CSS</b>?</i>" then you're half right. The <b>CSS</b> class selector is one example of a technology that makes use of the class attribute but it isn't the onlyreason for using classes. Classes can also be used in DOM Scripting. They can even be used by browsers if the class names follow an agreed convention, as is the case with microformats.</p>
+
+<h3>Microformats</h3>
+<p>Microformats are a set ofconventions which are agreed upon by a community.</p>
+<p><b>These formats use the class attribute to plug some of the more glaring holes in HTML:</b></p>
+<ul>
+<li>Card for contact details</li> 
+<li>Calendar for events</li> 
+<li>Atom for news stories</li> 
+</ul>
+
+<p><i>Because there is a community consensus on what class names to use, there are now parsers and browser extensions that work with those specific patterns.</i></p>
+
+<div id="allcontent">
+</div><!-- id = allcontent --->
+</body>
+</html>
